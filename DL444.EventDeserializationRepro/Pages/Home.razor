@@ -1,0 +1,11 @@
+﻿@page "/"
+
+<FluentOverflow Items="items">
+    <ItemTemplate>
+        <span>@context</span>
+    </ItemTemplate>
+</FluentOverflow>
+
+@code {
+    IEnumerable<int> items = [.. Enumerable.Range(0, 200)];
+}
